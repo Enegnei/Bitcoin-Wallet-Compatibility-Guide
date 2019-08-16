@@ -24,9 +24,7 @@ m / purpose' / coin_type' / account' / change / address_index
 + **Change:** This field, if the constant `0` is present, indicates "external chain" (regular) addresses; if the constant `1`, indicates "internal chain" (change) addresses.
 + **Address Index:** This field is for indicating the specific address number in a sequence, within an account.
 
-Note how many of the sequential fields start at zero (0), like how the first / ground floor is level zero in the U.K. and Europe. If a user has a wallet that displays them, the derivation path sequence for a **BIP-44** compliant **bitcoin** wallet, in which there is a **second change address** in the **third account**, would look like this:
-
-`m/44'/0'/2'/1/1` 
+Note how many of the sequential fields start at zero (0), like how the first / ground floor is level zero in the U.K. and Europe. If a user has a wallet that displays them, the derivation path sequence for a **BIP-44** compliant **bitcoin** wallet, in which there is a **second change address** in the **third account**, would look like this: `m/44'/0'/2'/1/1` 
 
 ### Scope of the Guide
 Since most Bitcoin wallets have been deterministic since, for now this guide will only focus on sequential and hierarchical deterministic wallets.

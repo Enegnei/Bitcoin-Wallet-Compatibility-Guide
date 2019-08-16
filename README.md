@@ -8,7 +8,7 @@ While great advances have been made in interoperability and recoverability, deve
 
 For non-technical users who do not have the knowledge or time to deeply study the code for every piece of software they use, it is often difficult for them to discern what standards any given wallet adheres to, and also to understand what (in)compatibility trade-offs they will be making by choosing this or that wallet for their bitcoin. This failure in understanding can lead to vendor lock-in, accidental address reuse, and unnecessary anxiety about why funds appear to be "lost" after importing keys to a different wallet than the one they were generated in.
 
-The purpose of this guide is to aggregate information about how different wallets implement key generation / seed types and, in the case of hierarchical deterministic (HD) wallets, how they handle derivation paths. The meaning of "public" versus "hardened derivation," indicated in the derivation path fields by apostrophes, is explained [here](https://medium.com/@sevcsik/working-with-bitcoin-hd-wallets-ii-deriving-public-keys-c48341629388) and [here](https://bitcoin.stackexchange.com/questions/62533/key-derivation-in-hd-wallets-using-the-extended-private-key-vs-hardened-derivati?rq=1).
+The purpose of this guide is to aggregate information about how different wallets implement key generation / seed types and, in the case of hierarchical deterministic (HD) wallets, how they handle derivation paths.
 
 ### Wallet Types
 First, an introduction to the various wallet types:
@@ -24,7 +24,9 @@ m / purpose' / coin_type' / account' / change / address_index
 + **Change:** This field, if the constant `0` is present, indicates "external chain" (regular) addresses; if the constant `1`, indicates "internal chain" (change) addresses.
 + **Address Index:** This field is for indicating the specific address number in a sequence, within an account.
 
-Note how many of the sequential fields start at zero (0), like how the first / ground floor is level zero in the U.K. and Europe. If a user has a wallet that displays them, the derivation path sequence for a **BIP-44** compliant **bitcoin** wallet, in which there is a **second change address** in the **third account**, would look like this: `m/44'/0'/2'/1/1` 
+Note how many of the sequential fields start at zero (0), like how the first / ground floor is level zero in the U.K. and Europe. If a user has a wallet that displays them, the derivation path sequence for a **BIP-44** compliant **bitcoin** wallet, in which there is a **second change address** in the **third account**, would look like this: `m/44'/0'/2'/1/1`
+
+The meaning of "public" versus "hardened derivation," indicated in the fields by apostrophes, is explained [here](https://medium.com/@sevcsik/working-with-bitcoin-hd-wallets-ii-deriving-public-keys-c48341629388) and [here](https://bitcoin.stackexchange.com/questions/62533/key-derivation-in-hd-wallets-using-the-extended-private-key-vs-hardened-derivati?rq=1).
 
 ### Scope of the Guide
 Since most Bitcoin wallets have been deterministic since, for now this guide will only focus on sequential and hierarchical deterministic wallets.

@@ -32,7 +32,7 @@ m / purpose' / coin_type' / account' / change / address_index
 
 Note how many of the sequential fields start at zero (0), like how the first / ground floor is level zero in the U.K. and Europe. If a user has a wallet that displays them, the derivation path sequence for a **BIP-44** compliant **bitcoin** wallet, in which there is a **second change address** in the **third account**, would look like this: `m/44'/0'/2'/1/1`
 
-The meaning of "public" versus "hardened derivation," indicated in the fields by apostrophes, is explained [here](https://medium.com/@sevcsik/working-with-bitcoin-hd-wallets-ii-deriving-public-keys-c48341629388) and [here](https://bitcoin.stackexchange.com/questions/62533/key-derivation-in-hd-wallets-using-the-extended-private-key-vs-hardened-derivati?rq=1).
+The meaning of "public" / unhardened versus hardened derivation," indicated in the fields by apostrophes, is explained )[here](https://wiki.trezor.io/Hardened_and_non-hardened_derivation) and [here](https://medium.com/@sevcsik/working-with-bitcoin-hd-wallets-ii-deriving-public-keys-c48341629388) and [here](https://bitcoin.stackexchange.com/questions/62533/key-derivation-in-hd-wallets-using-the-extended-private-key-vs-hardened-derivati?rq=1).
 
 ### Scope of the Guide
 Since most Bitcoin wallets are now deterministic, for now this guide will only focus on sequential and hierarchical deterministic wallets.
@@ -41,11 +41,11 @@ Since most Bitcoin wallets are now deterministic, for now this guide will only f
 
 For simplicity's sake, this chart should only look at what is implemented in **_the current version of the wallet software_**. However, if it is known that a significant portion of that wallet's users are still using an outdated version with significant differences, feel free to suggest that it be included as well (listed as a new row under the row for the current version of the wallet). If a wallet's implementation of the standard has critical differences that may affect its compatibility with other wallets supporting the same standard, please mark this with (^#), which can be further expanded on in 'Notes.'
 
-   Wallet    | # of Seed Words |      BIP-44    |      BIP-45    | 48 (Not Standardized) |      BIP-49    |      BIP-84    |
------------- | --------------- | -------------- | -------------- | --------------------- | -------------- | -------------- |
-   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |        [Yes / No]     |   [Yes / No]   |   [Yes / No]   |
-   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |        [Yes / No]     |   [Yes / No]   |   [Yes / No]   |
-   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |        [Yes / No]     |   [Yes / No]   |   [Yes / No]   |
+   Wallet    | # of Seed Words |      BIP-44    |      BIP-45    | 48 (No BIP) |      BIP-49    |      BIP-84    |
+------------ | --------------- | -------------- | -------------- | ----------- | -------------- | -------------- |
+   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   | [Yes / No]  |   [Yes / No]   |   [Yes / No]   |
+   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   | [Yes / No]  |   [Yes / No]   |   [Yes / No]   |
+   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   | [Yes / No]  |   [Yes / No]   |   [Yes / No]   |
   
 
 ### Notes

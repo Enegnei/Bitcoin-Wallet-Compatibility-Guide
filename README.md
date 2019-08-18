@@ -37,7 +37,7 @@ The meaning of "public" / unhardened versus hardened derivation," indicated in t
 ### Scope of the Guide
 Since most Bitcoin wallets are now HD wallets, this guide will mostly focus on them.
 
-## Wallet Comparison Chart
+## Wallet Comparison Charts
 
 For simplicity's sake, this chart should only look at what is implemented in **_the current version of the wallet software_**. However, if it is known that a significant portion of that wallet's users are still using an outdated version with significant differences, feel free to suggest that it be included as well (listed as a new row under the row for the current version of the wallet). If a wallet's implementation of the standard has critical differences that may affect its compatibility with other wallets supporting the same standard, please mark this with (^#), which can be further expanded on in 'Notes.'
 
@@ -54,8 +54,8 @@ For simplicity's sake, this chart should only look at what is implemented in **_
    [Name]    |       [number/s]     |           |
    [Name]    |       [number/s]     |           |
 
-  
+In the 'Number of Seed Words' column, possible answers include: `8`, `12`, `13`, `18`, and `24`. Keep in mind that `13` does not represent 12 words + passphrase. Some wallets do refer to passphrases as an "extension word" or the 13th / 25th word, but this is not really accurate. Please indicate the option to add a passphrase as (+P).
 
 ### Notes
 
-1. General Note: In the 'Seed Words' column, possible answers include: `8`, `12`, `13`, `18`, and `24`. Keep in mind that `13` does not represent 12 words + passphrase. Some wallets do refer to passphrases as an "extension word" or the 13th / 25th word, but this is not really accurate. Please indicate the option to add a passphrase as (+P).
+1. General Note:

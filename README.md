@@ -15,6 +15,7 @@ The purpose of this guide is to aggregate information about how different wallet
 ### Wallet Types
 First, an introduction to the various wallet types:
 
++ Paper wallets
 + Keypool buffer
 + Sequential deterministic wallets
 + Hierarchical deterministic wallets

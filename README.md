@@ -41,11 +41,11 @@ Since most Bitcoin wallets are now deterministic, for now this guide will only f
 
 For simplicity's sake, this chart should only look at what is implemented in **_the current version of the wallet software_**. However, if it is known that a significant portion of that wallet's users are still using an outdated version with significant differences, feel free to suggest that it be included as well (listed as a new row under the row for the current version of the wallet). If a wallet's implementation of the standard has critical differences that may affect its compatibility with other wallets supporting the same standard, please mark this with (^#), which can be further expanded on in 'Notes.'
 
-   Wallet    | # of Seed Words | BIP-44 Support | BIP-45 Support | BIP-49 Support | BIP-84 Support |
------------- | --------------- | -------------- | -------------- | -------------- | -------------- |
-   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |   [Yes / No]   |   [Yes / No]   |
-   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |   [Yes / No]   |   [Yes / No]   |
-   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |   [Yes / No]   |   [Yes / No]   |
+   Wallet    | # of Seed Words |      BIP-44    |      BIP-45    | 48 (Not Standardized) |      BIP-49    |      BIP-84    |
+------------ | --------------- | -------------- | -------------- | --------------------- | -------------- | -------------- |
+   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |        [Yes / No]     |   [Yes / No]   |   [Yes / No]   |
+   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |        [Yes / No]     |   [Yes / No]   |   [Yes / No]   |
+   [Name]    |     [number/s]  |    [Yes / No]  |   [Yes / No]   |        [Yes / No]     |   [Yes / No]   |   [Yes / No]   |
   
 
 ### Notes

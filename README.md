@@ -38,7 +38,7 @@ Note how many of the sequential fields start at zero (0), like how the first / g
 The meaning of "public" / unhardened versus hardened derivation," indicated in the fields by apostrophes, is explained [here](https://wiki.trezor.io/Hardened_and_non-hardened_derivation) and [here](https://medium.com/@sevcsik/working-with-bitcoin-hd-wallets-ii-deriving-public-keys-c48341629388) and [here](https://bitcoin.stackexchange.com/questions/62533/key-derivation-in-hd-wallets-using-the-extended-private-key-vs-hardened-derivati?rq=1).
 
 ### Scope of the Guide
-Since most Bitcoin wallets are now HD wallets, this guide will mostly focus on them.
+Since most Bitcoin wallets are now HD wallets, this guide will focus on them.
 
 ## Wallet Comparison Charts
 

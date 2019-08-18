@@ -15,10 +15,12 @@ The purpose of this guide is to aggregate information about how different wallet
 ### Wallet Types
 First, an introduction to the various wallet types:
 
-+ Paper wallets
-+ Keypool buffer
-+ Sequential deterministic wallets
-+ Hierarchical deterministic wallets
++ [**Paper wallets**](https://en.bitcoin.it/wiki/Paper_wallet) are not actually wallets, but rather private keys and addresses printed out on paper. While the keys and addresses can technically be generated non-deterministically or deterministically, the usability is basically the same or poorer than a non-deterministic software wallet. They have a number of significant drawbacks, including encouraging address reuse, exposing keys to poorly secured networked devices (printer), and not handling change addresses. They should not be confused with [recovery seeds](https://wiki.trezor.io/Recovery_seed).
++ **Non-deterministic wallets** randomly generate all private / public key pairs. [**Keypool buffer**](https://en.bitcoin.it/wiki/Key_pool) was added to the Bitcoin-Qt / Bitcoin Core wallet in [October](https://bitcointalk.org/index.php?topic=1414.0) [2010](https://bitcointalk.org/index.php?topic=1528.0), which allowed the wallet to create a collection of unused addresses, rather than generating new addresses one by one upon use. While this feature allowed for less frequent backups than before, the non-determinism still had the drawback of key loss if the pool was exhausted and a new key was generated beyond what was saved in backup.
++ **Deterministic wallets** are essentially any wallet where "[you can backup once... because all future addresses are determined in advance](https://bitcointalk.org/index.php?topic=19137.msg239768#msg239768)," which was a massive improvement in recoverability. There are [two different forms](https://bitcoin.stackexchange.com/questions/18102/does-a-wallet-containing-multiple-addresses-have-a-single-private-key):
+   + **Sequential deterministic wallets** take a single seed / passphrase and repeatedly increment it in order to generate new keypairs. This meant that the system would only need to store addresses, and then re-generate the private keys when needed.
+   + **Hierarchical deterministic wallets** take the single seed and randomly generate a master private / public key pair, which is then used to derive child key pairs that generate addresses. This system allows for the generation of addresses to occur without the master private key, with only the public key.
++ **Multi-signature wallets** require multiple signatures or parties to sign a transaction in order to spend bitcoin. An M-of-N [BIP-11](https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki) address must first be generated in order to receive bitcoin for spending in multi-signature transactions. While the 2-of-2 and 2-of-3 schemes are the most common, the [maximum number of public keys](https://bitcoin.stackexchange.com/questions/81223/why-is-20-the-maximum-public-keys-in-a-multisig-transaction) is higher, and [this could increase much more in the future](https://twitter.com/J9Roem/status/991098233828139008).
 
 ### What Are Derivation Paths?
 In hierarchical deterministic wallets ([BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)), a derivation path is a sequence of fields or levels through which a wallet organizes coins in a multi-currency, multi-account, and multi-address system. According to [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), this hierarchy consists of five levels, in addition to the master extended key represented by `M` (uppercase is the public key or 'xpub') or `m` (lowercase is the private key or 'xpriv').
@@ -50,7 +52,7 @@ For simplicity's sake, this chart should only look at what is implemented in **_
    
 #### If "Yes" To BIP-39
 
-   Wallet    | Number of Seed Words | Wordlists |
+   Wallet    | Number of Seed Words | [Wordlists](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md) |
 ------------ | -------------------- | --------- |
    [Name]    |       [number/s]     |           |
    [Name]    |       [number/s]     |           |

@@ -56,9 +56,10 @@ For simplicity's sake, this chart should only look at what is implemented in **_
 ------------ | -------------------- | --------- |
    [Name]    |       [number/s]     |           |
    [Name]    |       [number/s]     |           |
+   [Name]    |       [number/s]     |           |
 
 In the 'Number of Seed Words' column, possible answers include: `8`, `12`, `13`, `18`, and `24`. Keep in mind that `13` does not represent 12 words + passphrase. Some wallets do refer to passphrases as an "extension word" or the 13th / 25th word, but this is not really accurate. Please indicate the option to add a passphrase as (+P).
 
 ### Notes
 
-1. General Note:
+1. 

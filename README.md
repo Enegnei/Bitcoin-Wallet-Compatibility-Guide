@@ -22,11 +22,12 @@ For simplicity's sake, list the wallets in alphabetical order and only consider 
 
 If a wallet's implementation of the standard has critical differences that may affect its compatibility with other wallets supporting the same standard, please mark this with (^#), which can be further expanded on in 'Notes.'
 
-   Wallet    |   [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)   |   [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)   |   [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki)   |   [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki)   |  48 (No BIP) |   [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki)   |   [ BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)  |
------------- | ---------- | ---------- | ---------- | ------------ | ---------- | ---------- | --------- |
-   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] |
-   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] |
-   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] |
+Wallet | [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) | [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) | [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki) | [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) | 48 (No BIP) | [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) | [ BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)| Recovery |
+------------ | ---------- | ---------- | ---------- | ------------ | ---------- | ---------- | ---------- | ---------- |
+[Armory](https://www.bitcoinarmory.com/)| [No](https://btcarmory.com/docs/faq) | No | No |  No  | No | No | No | "[Restore a Wallet](https://www.bitcoinarmory.com/tutorials/armory-basics/restore-wallet/)|
+   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
+   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
+<!--Columns are: Wallet Name; BIP-39; BIP-44; BIP-45; BIP-47; 48 (No BIP); BIP-49; BIP-84; Recovery Process-->
    
 #### If "Yes" To BIP-39
 
@@ -35,6 +36,7 @@ If a wallet's implementation of the standard has critical differences that may a
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
+<!--Columns are: Wallet Name; Number of Seed Words; Wordlists; BPassphrase?; Recovery Instructions-->
 
 In the 'Number of Seed Words' column, possible answers include: `8`, `12`, `13`, `18`, and `24`. Keep in mind that `13` does not represent 12 words + passphrase. Some wallets do refer to passphrases as an "extension word" or the 13th / 25th word, but this is not really accurate. Please indicate the option to add a passphrase in the 'Passphrase?' column.
 
@@ -52,7 +54,7 @@ First, an introduction to the various wallet types:
    + **Hierarchical deterministic wallets** take the single seed and randomly generate a master private / public key pair, which is then used to derive child key pairs that generate addresses. This system allows for the generation of addresses to occur without the master private key, with only the public key.
 + **Multi-signature wallets** require multiple signatures or parties to sign a transaction in order to spend bitcoin. An M-of-N [BIP-11](https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki) address must first be generated in order to receive bitcoin for spending in multi-signature transactions. While the 2-of-2 and 2-of-3 schemes are the most common, the [maximum number of public keys](https://bitcoin.stackexchange.com/questions/81223/why-is-20-the-maximum-public-keys-in-a-multisig-transaction) is higher, and this could increase much more in the future [with Schnorr signatures](https://twitter.com/J9Roem/status/991098233828139008) and [Taproot](https://bitcoinops.org/en/newsletters/2019/05/14/).
 
-### Explainer: Derivation Paths?
+### Explainer: Derivation Paths
 In hierarchical deterministic wallets ([BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)), a derivation path is a sequence of fields or levels through which a wallet organizes coins in a multi-currency, multi-account, and multi-address system. According to [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), this hierarchy consists of five levels, in addition to the master extended private key ('xpriv') represented by `m` (alternatively, derivation paths for the master extended public key or 'xpub' use `M`).
 
 m / purpose' / coin_type' / account' / change / address_index

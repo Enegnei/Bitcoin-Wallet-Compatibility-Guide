@@ -16,6 +16,10 @@ The purpose of this guide is to aggregate information about how different wallet
 ### Scope of the Guide
 Since most Bitcoin wallets are now HD wallets, this guide will focus on them.
 
+Collaborating or Complementary Guides:
++ Wallets Recovery http://walletsrecovery.org/
++ SegWit and Replace-By-Fee Compatibility Matrix https://bitcoinops.org/en/compatibility/
+
 ## Wallet Comparison Charts
 
 For simplicity's sake, list the wallets in alphabetical order and only consider what is implemented in **_the current version of the wallet software_**. However, if it is known that a significant portion of people are still using an outdated version with significant differences, feel free to suggest that it be included as well (listed as a new row under the row for the current version of the wallet). Link directly to their documentation (if they have any) as much as possible.

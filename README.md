@@ -1,4 +1,4 @@
-# A Wallet Compatibility Guide for Bitcoin Keys
+# DRAFT: A Wallet Compatibility Guide for Bitcoin Keys
 
 > **Note: This document is still in the very early draft stages. Please focus on filling out the intro sections and formatting the comparison chart with necessary columns before trying to add wallets to it.**
 

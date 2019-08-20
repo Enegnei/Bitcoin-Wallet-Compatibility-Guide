@@ -24,7 +24,7 @@ If a wallet's implementation of the standard has critical differences that may a
 
 Wallet | [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) | [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) | [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki) | [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) | 48 (No BIP) | [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) | [ BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)| Recovery |
 ------------ | ---------- | ---------- | ---------- | ------------ | ---------- | ---------- | ---------- | ---------- |
-[Armory](https://www.bitcoinarmory.com/)| [No](https://btcarmory.com/docs/faq) | No | No |  No  | No | No | No | "[Restore a Wallet](https://www.bitcoinarmory.com/tutorials/armory-basics/restore-wallet/)|
+[Armory](https://www.bitcoinarmory.com/)| [No](https://btcarmory.com/docs/faq) | No | No |  No  | No | No | No | [Video](https://www.bitcoinarmory.com/tutorials/armory-basics/restore-wallet/)"|
    [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
    [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
 <!--Columns are: Wallet Name; BIP-39; BIP-44; BIP-45; BIP-47; 48 (No BIP); BIP-49; BIP-84; Recovery Process-->

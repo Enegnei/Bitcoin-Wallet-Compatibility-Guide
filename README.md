@@ -27,6 +27,8 @@ Wallet | [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 [Armory](https://www.bitcoinarmory.com/)| [No](https://btcarmory.com/docs/faq) | No | No |  No  | No | No | No | [Video](https://www.bitcoinarmory.com/tutorials/armory-basics/restore-wallet/)|
 [Bread Wallet]()| Yes | [No](https://github.com/voisine/breadwallet-ios/issues/131) | No |  No  | No | No | [Yes](https://apps.apple.com/th/app/breadwallet-bitcoin-wallet/id885251393) |[Page](https://brd.com/support/articles/115000763694)|
    [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
+   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
+[Samourai](https://samouraiwallet.com/bips)| Yes | Yes | No |  [Yes](https://github.com/SamouraiDev/BIP47_RPC) | No | Yes | Yes | [Pages](https://support.samourai.io/section/5-samourai-backup)|
 <!--Columns are: Wallet Name; BIP-39; BIP-44; BIP-45; BIP-47; 48 (No BIP); BIP-49; BIP-84; Recovery Process-->
    
 #### If "Yes" To BIP-39
@@ -36,7 +38,9 @@ Wallet | [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 Bread Wallet |[12](https://brd.com/support/articles/115009772648)| Unknown| No |[Yes](https://brd.com/support/articles/115000763694)  |
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
-<!--Columns are: Wallet Name; Number of Seed Words; Wordlists; BPassphrase?; Recovery Instructions-->
+   [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
+   Samourai  | [12](https://support.samourai.io/article/18-restore-your-samourai-wallet-with-your-secret-words)| Unknown| --- |   [Yes](https://support.samourai.io/category/3-restore-recovery)  |
+<!--Columns are: Wallet Name; Number of Seed Words; Wordlists; Passphrase?; Recovery Instructions-->
 
 In the 'Number of Seed Words' column, possible answers include: `8`, `12`, `13`, `18`, and `24`. Keep in mind that `13` does not represent 12 words + passphrase. Some wallets do refer to passphrases as an "extension word" or the 13th / 25th word, but this is not really accurate. Please indicate the option to add a passphrase in the 'Passphrase?' column.
 

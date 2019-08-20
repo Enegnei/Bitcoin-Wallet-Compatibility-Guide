@@ -7,6 +7,7 @@ While great advances have been made in interoperability and recoverability, deve
 + Don't implement BIP standard(s)
 + Implement a BIP standard, but with important differences from other wallets that also implemented it
 + Implement a BIP standard, but one that has not been widely adopted (and perhaps only by them)
++ Don't have clear documentation about their derivation paths, backup and recovery processes
 
 For non-technical users who do not have the knowledge or time to deeply study the code for every piece of software they use, it is often difficult for them to discern what standards any given wallet adheres to, and also to understand what (in)compatibility trade-offs they will be making by choosing this or that wallet for their bitcoin. This failure in understanding can lead to vendor lock-in, accidental address reuse, and unnecessary anxiety about why funds appear to be "lost" after importing keys to a different wallet than the one they were generated in.
 

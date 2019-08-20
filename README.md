@@ -27,7 +27,7 @@ In hierarchical deterministic wallets ([BIP-32](https://github.com/bitcoin/bips/
 
 m / purpose' / coin_type' / account' / change / address_index
 
-+ **Purpose:** This field, which was added through [BIP-43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), indicates which standard the derivation path follows. Possibilities include `44` referring to the default [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) P2PKH / '1' legacy addresses, `45` referring to [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki) P2SH multi-party multi-signature wallets (proposed), `48` referring to hardware multisignature wallets (no BIP or standard proposal), `49` referring to [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) P2WPKH-nested-in-P2SH / '3' SegWit addresses, or `84` referring to [BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) P2WPKH / 'bc1' native SegWit addresses. Some wallet services are supporting more than one (as in, they can display both legacy and SegWit accounts derived from the same seed).
++ **Purpose:** This field, which was added through [BIP-43](https://github.com/bitcoin/bips/blob/master/bip-0043.mediawiki), indicates which standard the derivation path follows. Possibilities include `44` referring to the default [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) P2PKH / '1' legacy addresses, `45` referring to [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki) P2SH multi-party multi-signature wallets (proposed), `47` referring to [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) reusable payment codes (draft), `48` referring to hardware multisignature wallets (no BIP or standard proposal), `49` referring to [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki) P2WPKH-nested-in-P2SH / '3' SegWit addresses, or `84` referring to [BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki) P2WPKH / 'bc1' native SegWit addresses. Some wallet services are supporting more than one (as in, they can display both legacy and SegWit accounts derived from the same seed).
 + **Coin Type:** This field indicates which cryptocurrency is being used in a multi-currency wallet. All coins, including testnet bitcoin, are assigned [a constant number](https://github.com/satoshilabs/slips/blob/master/slip-0044.md). For example, a derivation path for a Monero (XMR) account would be `m/44'/128'`. *Note that if finalized, BIP-45 would designate this level as the 'Cosigner Index' instead.*
 + **Account:** This field, in a multi-account wallet, indicates the identity or collection of addresses, which allow users to segregate funds for different things (ex. savings, donations). *Note that if finalized, BIP-45 would not include this field.*
 + **Change:** This field, if the constant `0` is present, indicates "external chain" (regular) addresses; if the constant `1`, indicates "internal chain" (change) addresses.
@@ -46,11 +46,11 @@ For simplicity's sake, list the wallets in alphabetical order and only consider 
 
 If a wallet's implementation of the standard has critical differences that may affect its compatibility with other wallets supporting the same standard, please mark this with (^#), which can be further expanded on in 'Notes.'
 
-   Wallet    |   [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)   |   [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)   |   [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki)   |  48 (No BIP) |   [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki)   |   [ BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)  |
------------- | ---------- | ---------- | ---------- | ------------ | ---------- | ---------- |
-   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] |
-   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] |
-   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] |
+   Wallet    |   [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)   |   [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)   |   [BIP-45](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki)   |   [BIP-47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki)   |  48 (No BIP) |   [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki)   |   [ BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki)  |
+------------ | ---------- | ---------- | ---------- | ------------ | ---------- | ---------- | --------- |
+   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] |
+   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] |
+   [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] |
    
 #### If "Yes" To BIP-39
 

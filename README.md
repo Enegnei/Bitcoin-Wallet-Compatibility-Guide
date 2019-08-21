@@ -33,6 +33,7 @@ Wallet | [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
    [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
    [Name]    | [Yes / No] | [Yes / No] | [Yes / No] |  [Yes / No]  | [Yes / No] | [Yes / No] | [Yes / No] | |
 [Samourai](https://samouraiwallet.com/bips)| Yes | Yes | No |  [Yes](https://github.com/SamouraiDev/BIP47_RPC) | No | Yes | Yes | [Pages](https://support.samourai.io/section/5-samourai-backup)|
+[Wasabi](https://docs.wasabiwallet.io/using-wasabi/BIP.html#what-is-supported-today)| Yes | Yes | No |  No  | No | No | Yes | [Page](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#how-do-i-back-up-my-mnemonic-words)|
 <!--Columns are: Wallet Name; BIP-39; BIP-44; BIP-45; BIP-47; 48 (No BIP); BIP-49; BIP-84; Recovery Process-->
    
 #### If "Yes" To BIP-39
@@ -44,6 +45,7 @@ Bread Wallet |[12](https://brd.com/support/articles/115009772648)| Unknown| No |
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
    [Name]    |       [number/s]     |           | [Yes+link / No] |   [link]  |
    Samourai  | [12](https://support.samourai.io/article/18-restore-your-samourai-wallet-with-your-secret-words)| Unknown| --- |   [Yes](https://support.samourai.io/category/3-restore-recovery)  |
+   Wasabi    | [12](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#how-do-i-generate-a-new-wallet) | Unknown | --- | [Seed](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#how-do-i-back-up-my-mnemonic-words), [Wallet](https://docs.wasabiwallet.io/FAQ/FAQ-UseWasabi.html#how-do-i-backup-my-wallet-file)|
 <!--Columns are: Wallet Name; Number of Seed Words; Wordlists; Passphrase?; Recovery Instructions-->
 
 In the 'Number of Seed Words' column, possible answers include: `8`, `12`, `13`, `18`, and `24`. Keep in mind that `13` does not represent 12 words + passphrase. Some wallets do refer to passphrases as an "extension word" or the 13th / 25th word, but this is not really accurate. Please indicate the option to add a passphrase in the 'Passphrase?' column.
